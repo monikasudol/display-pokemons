@@ -1,0 +1,8 @@
+.pokemons {
+  display: grid;
+  grid-template-areas: "a a a a a a a a";
+  justify-content: space-around;
+  grid-gap: 30px;
+  position: relative;
+  /* grid-auto-columns: 100px; */
+}

@@ -1,0 +1,71 @@
+.Grass {
+  background-color: rgb(33, 151, 33);
+}
+
+.Fire {
+  background-color: rgb(196, 43, 38);
+}
+
+.Poison {
+  background-color: rgb(139, 35, 165);
+}
+
+.Water {
+  background-color: rgb(54, 157, 216);
+}
+
+.Flying {
+  background-color: rgb(32, 124, 173);
+}
+
+.Psychic {
+  background-color: rgb(238, 235, 53);
+}
+
+.Normal {
+  background-color: rgb(120, 124, 126);
+}
+
+.Ground {
+  background-color: rgb(110, 63, 35);
+}
+
+.Fighting {
+  background-color: rgb(252, 73, 29);
+}
+
+.Rock {
+  background-color: rgb(160, 160, 160);
+}
+
+.Electric {
+  background-color: rgb(225, 243, 66);
+}
+
+.Ghost {
+  background-color: rgb(191, 247, 239);
+}
+
+.Dragon {
+  background-color: rgb(9, 124, 109);
+}
+
+.Ice {
+  background-color: rgb(119, 229, 243);
+}
+
+.Bug {
+  background-color: rgb(167, 65, 7);
+}
+
+.type {
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+}
