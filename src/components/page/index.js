@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchPokemons } from '../../state/pokemons';
+import './styles.css';
 
 class Page extends Component {
 

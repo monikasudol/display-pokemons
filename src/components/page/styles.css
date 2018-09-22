@@ -1,0 +1,8 @@
+.page {
+  cursor: pointer;
+  transition: background-color 1s;
+};
+
+.page:hover {
+  background-color: rgb()
+}

@@ -1,0 +1,20 @@
+.pokemon-info-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(59, 59, 59);
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  width: 90vw;
+  height: 90vh;
+  background-color: white;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.pokemon-info-details-exit-button {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}

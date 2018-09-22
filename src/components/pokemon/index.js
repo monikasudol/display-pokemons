@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import Popup from 'reactjs-popup';
+import { connect } from 'react-redux';
+import PokemonInfoDetails from '../pokemon-info-details';
+import { sendPokemonToDisplay } from '../../state/pokemons';
 import Type from '../type';
 import './styles.css';
 
@@ -14,16 +18,31 @@ class Pokemon extends Component {
     this.setState({
       showPokemonDetails: true
     })
+  };
+
+  sendPokemonToDisplay = () => {
+    this.props.sendPokemonToDisplay(this.props.id);
   }
 
   render() {
-    const { name, img, num, type } = this.props;
+    const { name,
+      img,
+      num,
+      type,
+      nextEvolution,
+      height,
+      weight,
+      candy,
+      candy_count,
+      egg,
+      spawn_chance,
+      avg_spawns,
+      multipliers,
+      weakness } = this.props;
     const { showPokemonDetails } = this.state;
     return (
       <div className='pokemon'
-
-        onClick={this.showPokemonDetails}>
-
+        onClick={this.sendPokemonToDisplay}>
         <img src={img} />
         <div className='pokemon-name'>
           #{num} {name}
@@ -34,12 +53,17 @@ class Pokemon extends Component {
           ))}
         </div>
         {/* {showPokemonDetails && (
-          <div className='pokemon-details'>
-          </div>
-        )} */}
+        <div className='pokemon-details'>
+        </div>
+      )} */}
+
       </div>
     );
   }
 }
 
-export default Pokemon;
+const mapDispatchToProps = {
+  sendPokemonToDisplay
+};
+
+export default connect(null, mapDispatchToProps)(Pokemon);

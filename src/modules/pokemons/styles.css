@@ -3,6 +3,17 @@
   grid-template-areas: "a a a a a a a a";
   justify-content: space-around;
   grid-gap: 30px;
+  min-height: 80vh;
+  padding-top: 15px;
   position: relative;
   /* grid-auto-columns: 100px; */
+}
+
+.pages {
+  width: 400px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid rgb(190, 190, 190);
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Page from '../../../components/page';
+import './styles.css';
 
 const pages = [1 , 2, 3, 4, 5, 6, 7, 8]
 
@@ -14,7 +15,7 @@ class Pages extends Component {
           (
             <Page
               key={index}
-              value={page}
+              value={page}     
             />
           )
         )}
