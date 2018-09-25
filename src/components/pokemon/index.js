@@ -43,7 +43,7 @@ class Pokemon extends Component {
     return (
       <div className='pokemon'
         onClick={this.sendPokemonToDisplay}>
-        <img src={img} />
+        <img src={img} className='pokemon-image' />
         <div className='pokemon-name'>
           #{num} {name}
         </div>
@@ -52,11 +52,6 @@ class Pokemon extends Component {
             <Type type={type} key={index} />
           ))}
         </div>
-        {/* {showPokemonDetails && (
-        <div className='pokemon-details'>
-        </div>
-      )} */}
-
       </div>
     );
   }

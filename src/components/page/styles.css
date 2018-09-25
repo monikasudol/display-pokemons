@@ -1,8 +1,24 @@
 .page {
   cursor: pointer;
   transition: background-color 1s;
-};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: white;
+  width: 40px;
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 3px;
+}
+
+.active-page {
+  background-color: rgb(201, 76, 76);
+}
 
 .page:hover {
-  background-color: rgb()
+  background-color: rgb(94, 184, 226);
+}
+
+.page_prev_or_next {
+  font-size: 30px;
 }

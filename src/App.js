@@ -14,14 +14,18 @@ class App extends Component {
   }
 
   render() {
-    const { pokemons, pokemonToDisplay, shouldShowPokemonDetails } = this.props;
+    const { pokemons,
+      pokemonToDisplay,
+      currentPage,
+      shouldShowPokemonDetails
+    } = this.props;
     return (
-      <div className="App">
+      <div className='App'>
         <Pokemons pokemons={pokemons} />
         {shouldShowPokemonDetails && (
           <PokemonInfoDetails pokemonToDisplay={pokemonToDisplay} />
         )}
-        <Pages />
+        <Pages currentPage={currentPage} />
       </div>
     );
   }
@@ -30,7 +34,8 @@ class App extends Component {
 const mapStateToProps = (state) => ({
   pokemons: state.pokemons,
   pokemonToDisplay: state.pokemons.pokemonToDisplay,
-  shouldShowPokemonDetails: state.pokemons.shouldShowPokemonDetails
+  shouldShowPokemonDetails: state.pokemons.shouldShowPokemonDetails,
+  currentPage: state.pokemons.currentPage
 });
 
 const mapDispatchToProps = {

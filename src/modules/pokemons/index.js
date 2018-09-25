@@ -9,11 +9,7 @@ class Pokemons extends Component {
   render() {
     const { pokemons, pokemonToDisplay, shouldShowPokemonDetails } = this.props;
     return (
-
-      <div className='pokemons'>
-   
-          
-       
+      <div className='pokemons'>     
         {pokemons.length > 0 && pokemons.map((pokemon, index) =>
           (
             <Pokemon
@@ -42,7 +38,7 @@ class Pokemons extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  pokemons: state.pokemons.pokemons
+  pokemons: state.pokemons.pokemons,
 });
 
 export default connect(mapStateToProps, null)(Pokemons);
