@@ -4,7 +4,16 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "better-npm-run": "^0.1.1",
     "classnames": "^2.2.6",
+    "env": "0.0.2",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0",
     "json-server": "^0.14.0",
     "loadash": "^1.0.0",
     "react": "^16.4.2",
@@ -15,16 +24,29 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5",
+    "react-test-renderer": "^16.5.2",
     "reactjs-popup": "^1.2.0",
     "redux": "^4.0.0",
     "redux-actions": "^2.6.1",
+    "redux-mock-store": "^1.5.3",
     "redux-saga": "^0.16.0",
-    "superagent": "^3.8.3"
+    "superagent": "^3.8.3",
+    "yarn": "^1.9.4"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "identity-obj-proxy": "^3.0.0"
   },
   "scripts": {
+    "start": "better-npm-run start",
+    "build": "better-npm-run build",
+    "test": "better-npm-run test",
+    "eject": "react-scripts eject"
+  },
+  "betterScripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest --watch --config=jest.config.json",
     "eject": "react-scripts eject"
   }
 }

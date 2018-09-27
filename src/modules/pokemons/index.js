@@ -4,7 +4,7 @@ import PokemonInfoDetails from '../../components/pokemon-info-details';
 import Pokemon from '../../components/pokemon';
 import './styles.css';
 
-class Pokemons extends Component {
+export class Pokemons extends Component {
 
   render() {
     const { pokemons, pokemonToDisplay, shouldShowPokemonDetails } = this.props;

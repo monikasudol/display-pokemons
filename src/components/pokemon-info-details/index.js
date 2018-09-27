@@ -8,7 +8,6 @@ class PokemonInfoInDetails extends Component {
 
   render() {
     const { pokemonToDisplay } = this.props;
-    console.log(pokemonToDisplay);
     return (
       <div className='pokemon-info-details'>
         {pokemonToDisplay && (

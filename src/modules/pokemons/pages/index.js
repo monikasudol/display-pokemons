@@ -5,9 +5,9 @@ import { fetchPokemons, setCurrentPage } from '../../../state/pokemons';
 import Page from '../../../components/page';
 import './styles.css';
 
-const pages = [1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+const pages = [1 , 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
-class Pages extends Component {
+export class Pages extends Component {
   
   onFetchPokemonsFromPreviousPage = () => {
     const value = this.props.currentPage - 1;
