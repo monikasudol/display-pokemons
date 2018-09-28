@@ -16,6 +16,6 @@ function* onFetchingPokemons(action){
     const pokemons = yield call(pokemonsApi.fetchPokemons, payload);
     yield put (fetchPokemonsSuccess(pokemons))
   } catch(e) {
-
+    yield fetchPokemonsFailure();
   }
 }

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import logo from './logo.svg';
 import { fetchPokemons } from './state/pokemons';
 import Pokemons from './modules/pokemons';
 import Pages from './modules/pokemons/pages';

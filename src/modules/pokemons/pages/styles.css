@@ -1,7 +1,12 @@
 .pages-icon-arrow {
   margin: 5px;
-  color: rgb(54, 158, 184);
+  color: rgb(67, 190, 221);
   cursor: pointer;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  transition: color 1s;
+}
+
+.pages-icon-arrow:hover {
+  color: rgb(74, 207, 47);
 }

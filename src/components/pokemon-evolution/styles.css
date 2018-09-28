@@ -1,0 +1,12 @@
+.pokemon-evolution {
+  background-color: rgb(15, 180, 166);
+  margin: 3px;
+  padding: 5px;
+  border-radius: 3px;
+  color: rgb(230, 227, 227);
+}
+
+.prev {
+  background-color: rgb(224, 211, 26);
+  color: rgb(129, 125, 125);
+}
